@@ -3,7 +3,7 @@ package cn.bestingmedia;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-public class CacheThreadPool {
+public class CacheThreadPool {  //试试修改提交会不会覆盖
 	
 	public static void main(String[] args) {
 		ExecutorService service = Executors.newCachedThreadPool();
