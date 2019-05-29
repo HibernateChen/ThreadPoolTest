@@ -7,8 +7,6 @@ public class CacheThreadPool {  //试试修改提交会不会覆盖
 	
 	public static void main(String[] args) {
 		ExecutorService service = Executors.newCachedThreadPool();
-		
-		int a =100;
 		 
 		for (int i = 0; i < 100; i++) {
 			service.execute(()->{ //lambel表达式
