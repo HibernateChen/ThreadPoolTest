@@ -11,6 +11,7 @@ public class CacheThreadPool {  //试试修改提交会不会覆盖
 		int b =0; //第六次修改。。。
 		int d =2; //第八次修改
 		int f = 1; //第十次修改
+		int g=1; //第十一次修改
 		
 		for (int i = 0; i < 100; i++) {
 			service.execute(()->{ //lambel表达式
