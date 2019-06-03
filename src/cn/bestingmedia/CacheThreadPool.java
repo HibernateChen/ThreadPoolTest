@@ -3,18 +3,19 @@ package cn.bestingmedia;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-public class CacheThreadPool {  //ÊÔÊÔĞŞ¸ÄÌá½»»á²»»á¸²¸Ç
+public class CacheThreadPool {  //è¯•è¯•ä¿®æ”¹æäº¤ä¼šä¸ä¼šè¦†ç›–
 	
 	public static void main(String[] args) {
 		ExecutorService service = Executors.newCachedThreadPool();
 		
-		int b =0; //µÚÁù´ÎĞŞ¸Ä¡£¡£¡£
-		int d =2; //µÚ°Ë´ÎĞŞ¸Ä
-		int f = 1; //µÚÊ®´ÎĞŞ¸Ä
-		int g=1; //µÚÊ®Ò»´ÎĞŞ¸Ä
+		int b =0; //ç¬¬å…­æ¬¡ä¿®æ”¹ã€‚ã€‚ã€‚
+		int d =2; //ç¬¬å…«æ¬¡ä¿®æ”¹
+		int f = 1; //ç¬¬åæ¬¡ä¿®æ”¹
+		int g=1; //ç¬¬åä¸€æ¬¡ä¿®æ”¹
+		int h=1; //ç¬¬åäºŒæ¬¡ä¿®æ”¹
 		
 		for (int i = 0; i < 100; i++) {
-			service.execute(()->{ //lambel±í´ïÊ½
+			service.execute(()->{ //lambelè¡¨è¾¾å¼
 				try {
 					Thread.sleep(500);
 				} catch (InterruptedException e) {
